@@ -211,6 +211,7 @@ footer {
         background-color: #01535c;
         text-align: center;
         padding-top: 60px;
+        z-index: 10;
     }
 
     .menu ul {
