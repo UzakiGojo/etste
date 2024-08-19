@@ -258,7 +258,7 @@ footer {
 
 .card:hover {
     flex-direction: row;
-    width: 100%;
+    width: 95%;
 }
 
 .card .img-box img {
