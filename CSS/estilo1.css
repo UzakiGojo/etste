@@ -1,0 +1,146 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, #182020,#01535c, #2D3E40);
+    background-repeat: no-repeat;
+    background-size: 6100px 6100px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #03a688 ;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    position: relative;
+}
+
+nav a::after{
+    content: " ";
+    width: 0%;
+    height: 3px;
+    background-color: #03a688;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+ nav a:hover::after{
+    width: 100%;
+  
+}
+
+.container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+
+.card {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    height: 300px;
+    position: relative;
+    background-color: #387373;
+    box-shadow: 0px 10px 40px #00000056;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.card:hover {
+    height: 400px;
+}
+
+.card .img-box {
+    margin: 10px;
+    position: absolute;
+    width: 200px;
+    height: 230px;
+    top: 0px;
+    transition: 0.5s;
+}
+
+.card:hover .img-box {
+    top: -100px;
+    scale: 0.80;
+}
+
+.card .img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card .content {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    position: absolute;
+    top: 250px;
+    width: 100%;
+    padding: 0px 30px;
+    text-align: center;
+    height: 30px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.card:hover .content {
+    top: 130px;
+    height: 250px;
+}
+
+.card .read-more {
+    background-color: #01535c;
+   padding: 12px;
+   color: #fff;
+   text-decoration: none;
+   border-radius: 8px;
+}
+
+audio{
+    display: flex;
+}
+
+audio::-webkit-media-controls-panel{
+    background-color: #01535c;
+    border: none;
+    margin: auto;
+}
+
+audio::-webkit-media-controls-play-button{
+    background-color: lightblue;
+    border-radius: 50%;
+    border: none;
+}
